@@ -1,0 +1,71 @@
+.slider {
+    position: relative;
+    margin: 0 auto;
+    width: 650px;
+
+    &__list {
+        position: relative;
+        left: 0px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        width: 1950px;
+        transition: 1s;
+        
+    }
+
+    &__bg {
+        position: absolute;
+        top: -280px;
+        left: calc(50% - 325px);
+        width: 650px; 
+        height: 400px;
+        background: url('/assets/img/laptop.png') no-repeat;
+        padding-top: 16px;
+        padding-left: 100px;
+    }
+
+    &__window {
+        width: 446px;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    &__slide {
+        float: left;
+    }
+
+    &__swich {
+        position: absolute;
+        bottom: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.swich {
+    font-size: 0;
+    &__button {
+        margin: 0;
+        padding: 0;
+        width: 15px;
+        height: 15px;
+        border: 2px solid #e0e1e2;
+        border-radius: 50%;
+        background: #fff;
+        cursor: pointer;
+        &:not(:last-child) {
+            margin-right: 7px;
+        }
+
+        &_active {
+            border-color: #1ca8dd;
+        }
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .slider {
+        display: none;
+    }
+}

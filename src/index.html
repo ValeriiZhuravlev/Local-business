@@ -5,337 +5,356 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Giant</title>
-  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
-  <!-- Header-->
-    <header class="header">
-      <div class="header__container">
-        <nav class="nav header__nav">
-          <div class="logo nav__logo">
-              <a class="logo__link" href="#">
-                <img src="./assets/img/Logo.png" alt="Logo">
-              </a>
-          </div>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="#">Home</a>
+  <!--Header-->
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="logo header__logo">
+        <a href="#"><img src="assets/img/logo.png" alt="Logo"></a>
+      </div>
+      <nav class="nav header__nav">
+
+        <ul class="nav__list">
+          <li class="nav__item nav_active"><a href="#" class="nav__link">home</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">service</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">about us</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">pricing table</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">how it work</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">happy clients</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">contact us</a></li>
+        </ul>
+      </nav>
+      <div class="header__bar" id="bar">
+       <i class="fa  fa-bars"></i>
+    </div>
+  </header>
+  <!--Header \-->
+  <main class="main">
+    <!--Banner-->
+    <section class="banner">
+      <h1 class="banner__title">boost up your local business</h1>
+      <p class="banner__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting</p>
+      <form class="subscribe banner__wrapper">
+        <div class="subscribe__input-wrapper subscribe__input-wrapper_name">
+          <input name="name"  type="text" class="subscribe__input" placeholder="Full name">
+        </div>
+        <div class="subscribe__input-wrapper subscribe__input-wrapper_email">
+          <input name="email" type="text" class="subscribe__input" placeholder="Email Address">
+        </div>
+        <div class="subscribe__input-wrapper subscribe__input-wrapper_phone">
+          <input name="phone" type="text" class="subscribe__input" placeholder="Phone Number">
+        </div>
+        <div class="subscribe__button-wrapper">
+          <button class="button subscribe__button" type="submit">request a quote</button>
+        </div>
+      </form>
+    </section>
+    <!--Banner \-->
+
+    <!--Slider-->
+    <div class="slider">
+      <div class="slider__bg">
+        <div class="slider__window">
+          <ul class="slider__list" id="slider">
+            <li class="slider__slide">
+              <img src="assets/img/slide1.jpg" width="446" height="265" alt="Slide 1">
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Features</a>
+            <li class="slider__slide">
+              <img src="assets/img/slide1.jpg" width="446" height="265" alt="Slide 2">
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Pricing</a>
-            </li>
-            <li class="nav__item nav__item_active">
-              <a class="nav__link" href="#">Download Now</a>
+            <li class="slider__slide">
+              <img src="assets/img/slide1.jpg" width="446" height="265" alt="Slide 2">
             </li>
           </ul>
-        </nav>
-        <div class="banner header__banner">
-          <h1 class="banner__title">A Powerful & Unique
-              App Landing Template</h1>
-          <p class="banner__subtitle"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <ul class="list banner__list">
-            <li class="list__item">Unlimited colors: banner with images, slider or video</li>
-            <li class="list__item">Fully Responsive and powered by HTML5 and CSS3</li>
-            <li class="list__item">Very easy to customize : set up in minutes</li>
-          </ul>
-          <a href="#" class="banner__btn">Start Exploring Us</a>  
         </div>
       </div>
-    </header>
-  <!-- / Header-->
-    <main class="main">
-      <!--Features-->
-      <section class="features">
-        <ul class="features__list">
-          <li class="features__item features__item_sell">
-            <h3 class="features__title">Sell any product online</h3>
-            <p class="features__text">Over 92% of computers are infected with Adware and spyware. Such software is</p>
-          </li>
-          <li class="features__item features__item_gear">
-            <h3 class="features__title">Very easy to customize</h3>
-            <p class="features__text">Many of us are so used to working on a computer desktop that when it comes
-            </p>
-          </li>
-          <li class="features__item features__item_brush">
-            <h3 class="features__title">Unlimited colors</h3>
-            <p class="features__text">Audio player software is used to play bakc sound recordings in one of the many</p>
-          </li>
-          <li class="features__item features__item_extinguisher">
-            <h3 class="features__title">Responsive, HTML5, CSS3</h3>
-            <p class="features__text">Computers have become ubiquitous in almost every facet of our lives. At work,</p>
-          </li>   
-          <li class="features__item features__item_file">
-            <h3 class="features__title">Designed to convert</h3>
-            <p class="features__text">If you are looking for a new way to promote your business that won`t cost</p>
-          </li>  
-          <li class="features__item features__item_support">
-            <h3 class="features__title">With no boundaries</h3>
-            <p class="features__text">Now, if you are interested in being the best player, getting really good money and</p>
-          </li>
-        </ul>
-      </section>
-       <!-- / Features-->
+      <div class="swich slider__swich">
+        <button class="swich__button swich__button_active" value="1">1</button>
+        <button class="swich__button" value="2">2</button>
+        <button class="swich__button" value="3">3</button>
+      </div>
+    </div>
+    <!--Slider \-->
 
-       <!--Promo-->
-      <section class="promo">
-        <div class="promo__wrap">
-          <div class="promo__info">
-            <h2 class="promo__title">We don't leave you stranded</h2>
-            <p class="promo__subtitle">Everyone's reasons for learning user interface design are different. If you're already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
-            <p class="promo__text">Everyone's reasons for leaming user interface design  are different. If you're already a developer, or a PM, or a UX designer, why develop this totally separate skill? If you're already a developer, or a PM, or a UX designer.</p>
-            <ul class="list promo__list">
-              <li class="list__item">Unlimited colors: banner with images, slider or video</li>
-              <li class="list__item">Fully Responsive and powered by HTML5 and CSS3</li>
-              <li class="list__item">Very easy to customize : set up in minutes</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-       <!-- / Promo-->
-
-       <!-- Screen Shots -->
-      <section class="screenshots">
-          <h2 class="screenshots__title">Take a look at our screenshots</h2>
-          <p class="screenshots__subtitle">Everyone's reasons for learning user interface design are different. If you're already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
-          <div class="screenshots__carousel carousel">
-            <ul class="carousel__slider">
-              <li class="carousel__slide  carousel__slide_center">
-                <img class="carousel__img" src="./assets/img/slide1.jpg" width="360" height="500" alt="Image 1" />
-              </li>
-              <li class="carousel__slide carousel__slide_next-near">
-                <img class="carousel__img" src="./assets/img/slide2.jpg" alt="Image 2" />
-              </li>
-              <li class="carousel__slide carousel__slide_next-middle">
-                <img class="carousel__img" src="./assets/img/slide3.jpg" alt="Image 3" />
-              </li>
-              <li class="carousel__slide carousel__slide_next-far">
-                <img class="carousel__img" src="./assets/img/slide4.jpg" alt="Image 4" />
-              </li>
-              <li class="carousel__slide carousel__slide_prev-far">
-                <img class="carousel__img" src="./assets/img/slide5.jpg" alt="Image 5" />
-              </li>
-              <li class="carousel__slide carousel__slide_prev-middle">
-                <img class="carousel__img" src="./assets/img/slide6.jpg" alt="Image 6" />
-              </li>
-              <li class="carousel__slide carousel__slide_prev-near">
-                <img class="carousel__img" src="./assets/img/slide7.jpg" alt="Image 7" />
-              </li>
-            </ul>
-            <button class="carousel__button slide-button slide-button_prev" id="prev">Prev</button>
-            <button class="carousel__button slide-button slide-button_next" id="next">Next</button>
-        </div>
-      </section>
-       <!-- / Screen Shots -->
-       
-       <!-- Pricing-->
-       <section class="pricing">
-         <h2 class="pricing__title">We've got the perfect package for you</h2>
-         <p class="pricing__subtitle">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
-          <ul class="pricing__list">
-            <li class="pricing__item option option_disabled">
-                <h3 class="option__name">Basic</h3>
-                <div class="option__price">
-                  <span class="option__price-value">12.0</span>
-                </div>
-                <ul class="option__list">
-                  <li class="option__item">One User</li>
-                  <li class="option__item">Multiple Access</li>
-                  <li class="option__item">SMS Support</li>
-                  <li class="option__item">24/7 Online Support</li>
-                </ul>
-                <span class="option__free-trial">Start free trial</span>
-                <a href="#" class="option__button">Buy Now</a>
-            </li>
-
-            <li class="pricing__item option option_active">
-                <h3 class="option__name">Standard</h3>
-                <div class="option__price">
-                  <span class="option__price-value">24.0</span>
-                </div>
-                <ul class="option__list">
-                  <li class="option__item">Five User</li>
-                  <li class="option__item">Multiple Access</li>
-                  <li class="option__item">SMS Support</li>
-                  <li class="option__item">24/7 Online Support</li>
-                </ul>
-                <span class="option__free-trial">Start free trial</span>
-                <a href="#" class="option__button">Buy Now</a>
-            </li>
-
-            <li class="pricing__item option">
-                <h3 class="option__name">Premium</h3>
-                <div class="option__price">
-                  <span class="option__price-value">250.0</span>
-                </div>
-                <ul class="option__list">
-                  <li class="option__item">Twenty User</li>
-                  <li class="option__item">Multiple Access</li>
-                  <li class="option__item">SMS Support</li>
-                  <li class="option__item">24/7 Online Support</li>
-                </ul>
-                <span class="option__free-trial">Start free trial</span>
-                <a href="#" class="option__button">Buy Now</a>
-            </li>
-
-            <li class="pricing__item option">
-                <h3 class="option__name">Enterprise</h3>
-                <div class="option__price">
-                  <span class="option__price-value">999.0</span>
-                </div>
-                <ul class="option__list">
-                  <li class="option__item">Unlimited User</li>
-                  <li class="option__item">Multiple Access</li>
-                  <li class="option__item">SMS Support</li>
-                  <li class="option__item">24/7 Online Support</li>
-                </ul>
-                <span class="option__free-trial">Start free trial</span>
-                <a href="#" class="option__button">Buy Now</a>
-            </li>
-          </ul>
-        </section>
-       <!-- / Pricing-->
-       
-       <!--Video-->
-       <section class="player">
-          <h2 class="player__title">Video player</h2>
-          <video class="player__video" id='video'  poster="./assets/img/video.jpg">
-          <source id='mp4' src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4'/>
-          <source id='webm' src="http://media.w3.org/2010/05/sintel/trailer.webm" type='video/webm'/>
-          <source id='ogv' src="http://media.w3.org/2010/05/sintel/trailer.ogv" type='video/ogg'/>
-          </video>
-           <button id="play" class="player__play"></button>
-       </section>
-       <!-- / Video-->
-
-       <!-- Reviews-->
-       <section class="reviews">
-         <h2 class="reviews__title">What our customers are saying</h2>
-         <p class="reviews__subtitle">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
-         <div class="reviews__wrap">
-          <div class="reviews__slider">
-            <ul class="reviews__list">
-              <li class="reviews__item review">
-                <p class="review__text">
-                  The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.
-                </p>
-                <div class="review__user user">
-                  <img class="user__photo" src="./assets/img/user1.jpg" alt="Пользователь-1">
-                  <div class="user__info">
-                    <p class="user__name">Alexandra Bullock</p>
-                    <span class="user__device">Apple Inc.</span>
-                  </div>
-                </div>
-              </li>
-
-              <li class="reviews__item review review_active">
-                <p class="review__text">
-                  Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and developer support are.
-                </p>
-                <div class="review__user user">
-                  <img class="user__photo" src="./assets/img/user2.jpg" alt="Пользователь-1">
-                  <div class="user__info">
-                    <p class="user__name">Gary Sebastian</p>
-                    <p class="user__device">Apple Inc.</p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="reviews__item review">
-                  <p class="review__text">
-                    Definitely a great theme and the support team are fantastic. Customer support is numero uno and ShapingRain have got this spot on. Cheers guys.
-                  </p>
-                  <div class="review__user user">
-                    <img class="user__photo" src="./assets/img/user3.jpg" alt="Пользователь-1">
-                    <div class="user__info">
-                      <p class="user__name">Samantha Bilbau</p>
-                      <span class="user__device">Apple Inc.</span>
-                    </div>  
-                  </div>
-                </li>
-
-                <li class="reviews__item review">
-                  <p class="review__text">
-                    Definitely a great theme and the support team are fantastic. Customer support is numero uno and ShapingRain have got this spot on. Cheers guys.
-                  </p>
-                  <div class="review__user user">
-                    <img class="user__photo" src="./assets/img/user3.jpg" alt="Пользователь-1">
-                    <div class="user__info">
-                      <p class="user__name">Samantha Bilbau</p>
-                      <span class="user__device">Apple Inc.</span>
-                    </div>  
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <button class="reviews__button slide-button slide-button_prev" id="prevReview">Prev</button>
-            <button class="reviews__button slide-button slide-button_next" id="nextReview">Next</button>
-          </div>
-        </section>
-       <!-- / Reviews-->
-
-      <!-- Download --> 
-        <section class="download">
-          <h2 class="download__title">Download Giant App Now</h2>
-          <ul class="download__list">
-            <li class="download__item download-banner">
-              <div class="download-banner__wrap download-banner__wrap_ios">
-                <div class="download-banner__info">
-                  <h3 class="download-banner__title">
-                      <a class="download-banner__link" href="#">Download</a>
-                  </h3>
-                  <p class="download-banner__text">Download from app store</p>
-                </div>
-              </div>
-            </li>
-            <li class="download__item download-banner">
-              <div class="download-banner__wrap download-banner__wrap_android">
-                <div class="download-banner__info">
-                    <h3 class="download-banner__title">
-                      <a class="download-banner__link" href="#">Download</a>
-                    </h3>
-                  <p class="download-banner__text">Download from play store</p>
-                </div>
-              </div>
-            </li>
-            <li class="download__item download-banner">
-              <div class="download-banner__wrap download-banner__wrap_windows">
-                <div class="download-banner__info">
-                  <h3 class="download-banner__title">
-                      <a class="download-banner__link" href="#">Download</a>
-                  </h3>
-                <p class="download-banner__text">Download from microsoft store</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-      <!-- / Download --> 
-    </main>
-
-    <!-- Footer-->
-    <footer class="footer">
-      <ul class="footer__icons">
-        <li class="footer__icon">
-          <a href="#" class="footer__link footer__link_facebook">Facebook</a>
+    <!--Service-->
+    <section class="service">
+      <h2 class="service__title">our services</h2>
+      <p class="service__subtitle">Lorem lpsum is simply dummy Business industry.</p>
+      <ul class="service__list">
+        <li class="service__item service__item_time">
+          <h3 class="service__name">font-awesome icons</h3>
+          <p class="service__text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting ind
+            ustry. Lorem Ipsum has been the industry's standard dummy text ever 
+            since the 1500s, when an unknown printer.
+          </p>
         </li>
-        <li class="footer__icon">
-          <a class="footer__link footer__link_twitter" href="#">Twitter</a>
+        <li class="service__item service__item_cog">
+          <h3 class="service__name">Fully Responsive Design</h3>
+          <p class="service__text">
+            Many desktop publishing packages and web page editors now use Lorem 
+            Ipsum as their default model text, and a search for 'lorem ipsum' will
+             uncover many web sites still in their infancy
+          </p>
         </li>
-        <li class="footer__icon">
-            <a class="footer__link footer__link_dribbble" href="#">Dribbble</a>
+        <li class="service__item service__item_graduation">
+          <h3 class="service__name">Working Contact form</h3>
+          <p class="service__text">
+            Many desktop publishing packages and web page editors now use Lorem 
+            Ipsum as their default model text, and a search for 'lorem ipsum' will
+            un cover many web sites still in their infancy
+          </p>
         </li>
-        <li class="footer__icon">
-            <a class="footer__link footer__link_behance" href="#">Behance</a>
+        <li class="service__item service__item_rocket">
+          <h3 class="service__name">Retina Ready icons here</h3>
+          <p class="service__text">
+            There are many variations of passages of Lorem Ipsum available, but the
+             majority have suffered alteration in some form, by injected humour or 
+             randomised words which don't look even slightly believable.
+          </p>
+        </li>
+        <li class="service__item service__item_renren">
+          <h3 class="service__name">Friendly Code</h3>
+          <p class="service__text">
+            Finibus Bonorum et Malorum" by Cicero are also reproduced in their 
+            exact original form, accompanied by English versions from the 1914 
+            translation by H. Rackham
+          </p>
+        </li>
+        <li class="service__item service__item_dollar">
+          <h3 class="service__name">Flat trendy landing page Design</h3>
+          <p class="service__text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+             when an unknown printer.
+          </p>
         </li>
       </ul>
-      <p class="footer__copyright">Copyright © 2017  |  UXSEVEN - a sister concern of codepixar.com</p>
-    </footer>
-    <!-- / Footer-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </section>
+    <!--Service \-->
+
+    <!--About Us-->
+    <section class="aboutus">
+      <div class="aboutus__content">
+        <h2 class="aboutus__title">about us</h2>
+        <p class="aboutus__text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+          has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+          took a galley of type and scrambled it to make a type specimen book. It has survived not only 
+          five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+          It was popularised in the ore recently with desktop publishing software like Aldus PageMaker 
+          including versions of Lorem Ipsum
+        </p>
+      <button class="button aboutus__button">read more</button>
+      </div>
+    </section>
+    <!--About Us \-->
+
+    <!--Pricing-->
+    <section class="pricing">
+      <h2 class="pricing__title">Choos your price</h2>
+      <p class="pricing__subtitle">Lorem lpsum is simply cummy text of the printing typesetting.</p>
+      <ul class="pricing__list">
+        <li class="price pricing__item price_prev">
+          <p class="price__name">basic plan</p>
+          <p class="price__value">22</p>
+          <span class="price__period">per month</span>
+          <ul class="price__list">
+            <li class="price__item">1account</li>
+            <li class="price__item">8 hour support</li>
+            <li class="price__item">custom cloud services</li>
+          </ul>
+          <button class="button price__button">get started</button>
+        </li>
+        <li class="price pricing__item price_active">
+          <p class="price__name">premium plan</p>
+          <p class="price__value">42</p>
+          <span class="price__period">per month</span>
+          <ul class="price__list">
+            <li class="price__item">2account</li>
+            <li class="price__item">100MB storage</li>
+            <li class="price__item">custom cloud services</li>
+          </ul>
+          <button class="button price__button">get started</button>
+        </li>
+        <li class="price pricing__item price_next">
+          <p class="price__name">gold plan</p>
+          <p class="price__value">62</p>
+          <span class="price__period">per month</span>
+          <ul class="price__list">
+            <li class="price__item">8account</li>
+            <li class="price__item">24 hour support</li>
+            <li class="price__item">custom cloud services</li>
+          </ul>
+          <button class="button price__button">get started</button>
+        </li>
+      </ul>
+    </section>
+    <!--Pricing \-->
+
+
+    <!--Steps-->
+    <section class="steps">
+      <h2 class="steps__title">how it works</h2>
+      <p class="steps__subtitle">Lorem lpsum is simply dummy Business industry</p>
+      <ul class="steps__list">
+        <li class="step steps__item step_headphones">
+          <div class="step__wrap">
+            <h3 class="step__name">step 1</h3>
+            <p class="step__text">Lorem lpsum is simply dummy text of the printing
+             and typesetting industry. Lorem lpsumhas been</p>
+          </div>
+        </li>
+        <li class="step steps__item step_unlock">
+          <div class="step__wrap">
+            <h3 class="step__name">step 2</h3>
+            <p class="step__text">Lorem lpsum is simply dummy text of the printing
+             and typesetting industry. Lorem lpsumhas been</p>
+          </div>
+        </li>
+        <li class="step steps__item step_cloud">
+          <div class="step__wrap">
+            <h3 class="step__name">step 3</h3>
+            <p class="step__text">Lorem lpsum is simply dummy text of the printing
+             and typesetting industry. Lorem lpsumhas been</p>
+          </div>
+        <li class="step steps__item step_thambs">
+          <div class="step__wrap">
+            <h3 class="step__name">step 4</h3>
+            <p class="step__text">Lorem lpsum is simply dummy text of the printing
+             and typesetting industry. Lorem lpsumhas been</p>
+          </div>
+        </li>
+      </ul>
+      <button class="button steps__button">get start now</button>
+    </section>
+    <!--Steps \-->
+
+    <!--Reviews-->
+    <section class="reviews">
+      <h2 class="reviews__title">happy clients</h2>
+      <p class="reviews__subtitle">We are explain who is using our business solutions</p>
+      <ul class="reviews__list">
+        <li class="reviews__review">
+          <div class="reviews__photo">
+            <img src="./assets/img/user1.jpg" alt="user1">
+          </div>
+          <div class="reviews__wrap">
+            <p class="reviews__text">Lorem Ipsum is simply dummy text of the printing and typesetting 
+              industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it to make.</p>
+              <span class="reviews__name">darwin michle,</span>
+              <span class="reviews__profession">project manager</span>
+          </div>
+        </li>
+        <li class="reviews__review">
+          <div class="reviews__photo">
+            <img src="./assets/img/user2.jpg" alt="user2">
+          </div>
+          <div class="reviews__wrap">
+            <p class="reviews__text">Lorem Ipsum is simply dummy text of the printing and typesetting 
+              industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <span class="reviews__name">madam elisabath,</span>
+              <span class="reviews__profession">creative director</span>
+          </div>
+        </li>
+        <li class="reviews__review">
+          <div class="reviews__photo">
+            <img src="./assets/img/user3.jpg" alt="user3">
+          </div>
+          <div class="reviews__wrap">
+            <p class="reviews__text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting 
+              industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it to make.</p>
+              <span class="reviews__name">clips arter,</span>
+              <span class="reviews__profession">lipsum directer</span>
+          </div>
+        </li>
+        <li class="reviews__review">
+          <div class="reviews__photo">
+            <img src="./assets/img/user4.jpg" alt="user4">
+          </div>
+          <div class="reviews__wrap">
+            <p class="reviews__text">Lorem Ipsum is simply dummy text of the printing and typesetting 
+              industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <span class="reviews__name">zam cristafr,</span>
+              <span class="reviews__profession">manager</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!--Reviews \-->
+
+    <!--Map-->
+    <section class="map">
+      <h2 class="map__title">new sletter</h2>
+      <p class="map__subtitle">Lorem lpsum is simply dummy Business industry</p>
+      <form class="subscribe map__wrapper">
+        <div class="subscribe__input-wrapper subscribe__input-wrapper_name">
+          <input name="name"  type="text" class="subscribe__input" placeholder="Name">
+        </div>
+        <div class="subscribe__input-wrapper subscribe__input-wrapper_email">
+          <input name="email" type="text" class="subscribe__input" placeholder="Email Address">
+        </div>
+        <div class="subscribe__button-wrapper">
+          <button class="button subscribe__button" type="submit">subscribe now</button>
+        </div>
+      </form>
+      <div class="map__card">
+        <div class="map__cloud">
+          <h3 class="map__name">address</h3>
+          <address class="map__address">
+            Business street<br>
+            Second north section<br>
+            Bavani nagar. 88769<br>
+            Call:<a class="map__phone" href="tel:+987-9976-999">+987-9976-999</a><br>
+            <a class="map__email" href="mailto:infobusinessface.com">infobusinessface.com</a>
+          </address>
+        </div>
+      </div>
+    </section>
+    <!--Map \-->
+  </main>
+  <!--Footer-->
+  <footer class="footer">
+    <div class="nav footer__nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link">home</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">service</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">about us</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">pricing table</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">how it work</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">happy clients</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">contact us</a></li>
+      </ul>
+    </div>
+    <a href="tel:+987-9976-999" class="footer__phone">+987 9976 999</a>
+    <ul class="footer__icons">
+      <li class="footer__icon footer__icon_twitter">
+        <a href="#" class="footer__link">Twitter</a>
+      </li>
+      <li class="footer__icon footer__icon_facebook">
+        <a href="#" class="footer__link">Facebook</a>
+      </li>
+      <li class="footer__icon footer__icon_google">
+        <a href="#" class="footer__link">Google</a>
+      </li>
+      <li class="footer__icon footer__icon_linked-in">
+        <a href="#" class="footer__link">Linked In</a>
+      </li>
+    </ul>
+    <div class="footer__copyright">
+      All contents © copyright 2014 Business Theme. All rights reserved Designed by : akhilwebfolio
+    </div>
+  </footer>
+  <!--Footer \-->
 </body>
 </html>

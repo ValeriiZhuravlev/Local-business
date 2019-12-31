@@ -1,0 +1,15 @@
+@mixin font-Lato() {
+  font-family: 'Lato', 'Arial', sans-serif;
+}
+
+@mixin font-OpenSans() {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+}
+
+@mixin font-Montserrat() {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+}
+
+@mixin font-FontAwesome() {
+  font-family: 'FontAwesome';
+}

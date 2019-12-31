@@ -1,0 +1,76 @@
+@import "utils/mixins.scss";
+@import "utils/normalize.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  @include font-OpenSans;
+  max-width: 1700px;
+  min-width: 320px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0 auto;
+}
+
+h1 {
+  @include font-Montserrat;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+h2 {
+  @include font-Montserrat;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+h3 {
+  @include font-Lato;
+}
+
+.header__wrapper {
+  max-width: 1190px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.main {
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 34px;
+    line-height: 32px;
+  }
+
+  h2 {
+    line-height: 30px;
+    font-weight: 900;
+  }
+}
+
+@import "../assets/blocks/header.scss";
+@import "../assets/blocks/banner.scss";
+@import "../assets/blocks/slider.scss";
+@import "../assets/blocks/service.scss";
+@import "../assets/blocks/aboutus.scss";
+@import "../assets/blocks/pricing.scss";
+@import "../assets/blocks/steps.scss";
+@import "../assets/blocks/reviews.scss";
+@import "../assets/blocks/map.scss";
+@import "../assets/blocks/footer.scss";

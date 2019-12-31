@@ -1,0 +1,158 @@
+.steps {
+    padding-top: 110px;
+    padding-bottom: 150px;
+
+    &__title {
+        color: #394b50;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 0;
+        padding-bottom: 5px;
+        margin: 0;
+    }
+
+    &__subtitle {
+        text-align: center;
+        color: #394b50;
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+    }
+        
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        padding-left: 35px;
+        padding-right: 35px;
+        margin-top: 130px;
+        list-style: none;
+    }
+
+    &__button {
+        display: block;
+        margin: 70px auto 0;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.step {
+    position: relative;
+    min-height: 260px;
+    max-width: 220px;
+    width: 100%;
+    text-align: center;
+
+    &__name {
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-size: 13px;
+        color: #7b7b7b;
+    }
+
+    &__wrap {
+        position: absolute;
+        bottom: 0;
+    }
+
+    &:before {
+        @include font-FontAwesome;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 72px;
+        color: #fff;
+        text-shadow: 2px 2px 0#709dca,
+                -2px -2px 0 #709dca,
+                2px -2px 0#709dca,
+                -2px 2px 0#709dca;
+    }
+
+    &_headphones {
+        &:before {
+            content: "\f025";
+        }
+    }
+
+    &_unlock {
+        &:before {
+            content: "\f13e";
+        }
+    }
+
+    &_cloud {
+        &:before {
+            content: "\f0ee";
+        }
+    }
+
+    &_thambs {
+        &:before {
+            content: "\f164";
+        }
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 130px;
+        height: 35px;
+        background: url("/assets/img/arrow.png") no-repeat center;
+    }
+
+    &:nth-child(1),
+    &:nth-child(3)  {
+        &:after {
+            top: -23%;
+            right: -46%;
+        }
+    }
+
+    &:nth-child(2) {
+        &:after {
+            transform: rotate(180deg);
+            top: 16%;
+            right: -46%;
+        }
+    }
+    
+    &:nth-child(4) {
+        &::after {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .steps {
+        padding: 60px 20px 50px;
+
+        &__list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 70px;
+        }
+
+        &__button {
+            margin: 10px auto;
+        }
+    }
+    
+    .step {
+        margin-bottom: 30px;
+        min-height: 180px;
+
+        &:after {
+            background: none;
+        }
+    }
+}

@@ -1,12 +1,11 @@
 // Main js file
 // see more: https://github.com/vedees/webpack-template/blob/master/README.md#import-js-files
 
-const sliderScreen = require('./scripts/sliderScreen.js');
-const player = require('./scripts/player.js');
-const sliderReviews = require('./scripts/sliderReview.js');
+const slider = require('./scripts/slider.js');
+const bar = require('./scripts/bar.js');
+
 
 window.addEventListener('DOMContentLoaded', function() {
-    sliderScreen;
-    player;
-    sliderReviews;
+    bar;
+    slider;
 });

@@ -1,0 +1,113 @@
+.service {
+    color: #394b50;
+    padding-top: 200px;
+    padding-bottom: 100px;
+
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+        padding-bottom: 5px;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        text-align: center;
+        margin: 0;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 70px;
+    }
+
+    &__item {
+        position: relative;
+        width:calc(48% - 65px);
+        padding-left: 90px;
+        margin-bottom: 35px;
+        &:before {
+            color: #fff;
+            font-size: 50px;
+            @include font-FontAwesome;
+            position: absolute;
+            top: 30px;
+            left: 10px;
+            text-shadow: 1px 1px 0#709dca,
+                -1px -1px 0 #709dca,
+                1px -1px 0#709dca,
+                -1px 1px 0#709dca;
+        }
+
+        &_time {
+            &:before {
+                content: "\f017";
+                text-shadow: 1px 1px 0#F6772C,
+                -1px -1px 0 #F6772C,
+                1px -1px 0#F6772C,
+                -1px 1px 0#F6772C;
+            }
+        }
+
+        &_cog {
+            &:before {
+                content: "\f013";
+            }
+        }
+
+        &_graduation {
+            &:before {
+                content: "\f19d";
+            }
+        }
+
+        &_rocket {
+            &:before {
+                content: "\f135";
+            }
+        }
+
+        &_renren {
+            &:before {
+                content: "\f18b";
+            }
+        }
+
+        &_dollar {
+            &:before {
+                content: "\f155";
+            }
+        }
+    }
+
+    &__name {
+        @include font-Lato;
+        font-size: 16px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        color: #7b7b7b;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .service {
+        padding: 140px 20px 50px;
+    }
+    .service__item {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 658px) {
+    .service {
+        padding: 60px 20px 50px;
+    }
+}

@@ -1,0 +1,109 @@
+.reviews {
+    background: #ffc155;
+    padding: 130px 10px;
+
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 5px;
+    }
+
+    &__subtitle {
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0;
+        padding-top: 50px;
+    }
+
+    &__review {
+        display: flex;
+        width: calc(50% - 15px);
+        padding: 45px 40px 50px 30px;
+        margin: 0;
+        margin-bottom: 20px;
+        float: left;
+        list-style: none;
+        background: #fff;
+    }
+
+    &__text {
+        position: relative;
+        margin: 0;
+        margin-bottom: 18px;
+        color: #7b7b7b;
+
+        &:before,
+        &:after {
+            position: absolute;
+            font-family: Georgia, serif;
+            font-weight: 800;
+            font-size: 26px;
+        }
+
+        &:before {
+            content: "“";
+            left: -20px;
+        }
+
+        &:after {
+            content: "“";
+            margin-top: 5px;
+            margin-left: 20px;
+            transform: rotateY(180deg);
+        }
+    }
+
+    &__photo {
+        display: inline;
+        margin-right: 30px;
+        img {
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    }
+
+    &__wrap {
+        float: left;
+    }
+
+
+    &__name {
+        @include font-Lato;
+        text-transform: uppercase;
+        color: #f6772c;
+        font-size: 14px;
+    }
+
+    &__profession {
+        text-transform: uppercase;
+        color: #99a9ae;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .reviews {
+        padding: 60px 10px 50px;
+        &__review {
+            padding: 10px 30px;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        &__photo {
+            text-align: center;
+        }
+    }
+}
